@@ -1,0 +1,548 @@
+@charset "UTF-8";
+
+html{background-color:#eaeaea;}
+
+.wrap{
+    max-width:720px;
+    min-width:320px;
+    height:100px;
+    margin:auto;
+}
+
+/*====================================
+        Header Start
+======================================*/
+.wrap>header{
+    width:7.2rem;
+    background-color:rgba(0, 185, 209, 0.09);
+    z-index:9999;
+}
+.wrap>header .search{
+    padding:0.13rem 0.24rem 0.13rem 0.32rem;
+}
+.wrap>header .search input{
+    width:5.2rem;
+    height:0.55rem;
+    outline:none;
+    border:none;
+    border-radius:0.25rem;
+    font-size:0.24rem;
+    text-indent:0.75rem;
+    line-height:0.55rem;
+    background:rgba(255,255,255,.5) url("../img/icon_search.png") no-repeat 0.15rem center/0.35rem;
+}
+.wrap>header .header-right{
+    padding-top:0.17rem;
+}
+.wrap>header .header-right a.message img{
+    width:0.47rem;
+    height:0.47rem;
+}
+.wrap>header .header-right a.login{
+    color:#fff;
+    line-height:0.5rem;
+    margin-left:0.2rem;
+}
+/*====================================
+        Main Start
+======================================*/
+
+/****** TopBanner ******/
+    /* 修改Swiper分页器样式 */
+.main .TopBanner .swiper-pagination .swiper-pagination-bullet{
+    width:0.06rem;
+    height:0.06rem;
+    background-color:rgba(255,255,255,.95);
+}
+.main .TopBanner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width:0.36rem;
+    border-radius:0.02rem;
+    transition:width .3s;
+    -webkit-transition:width .3s;
+    -moz-transition:width .3s;
+    -o-transition:width .3s;
+}
+/****** MenuList ******/
+.main .MenuList-wrap{
+    width:7.2rem;
+    height:1.42rem;
+    background-color:#fff;
+}
+.main .MenuList-wrap .MenuList{
+    width:7rem;
+    padding:0 0.1rem;
+}
+.main .MenuList-wrap .MenuList li{
+    float:left;
+    width:1.40rem;
+    height:1.42rem;
+}
+.main .MenuList-wrap .MenuList li a img{
+    width:0.60rem;
+    height:0.60rem;
+    margin:0.22rem auto 0.10rem;
+}
+.main .MenuList-wrap .MenuList li a p{
+    color:#000;
+    font-size:0.20rem;
+    text-align:center;
+}
+/****** goodsHeadShow ******/
+.main .goods-headerShow{
+    margin-top:0.12rem;
+    background-color:#fff;
+}
+.main .goods-headerShow>a{
+    float:left;
+}
+.main .goods-headerShow>a.marR{
+    margin-right:0.04rem;
+}
+.main .goods-headerShow>a.marB{
+    margin-bottom:0.04rem;
+}
+.main .goods-headerShow>a img{
+    width:3.58rem;
+    height:2.43rem;
+}
+.main .goods-headerShow>a img.height{
+    height:4.90rem;
+}
+.main .goods-headerShow>a.showBox{
+    position:relative;
+    width:2.37rem;
+    height:3.34rem;
+    background-color:#f6f6f6;
+    text-align:center;
+}
+.main .goods-headerShow>a.showBox .phone{
+    width:1.44rem;
+    height:1.46rem;
+    margin:0.24rem auto 0.28rem;
+}
+.main .goods-headerShow>a.showBox .hot{
+    position:absolute;
+    top:0;
+    left:0;
+    width:0.54rem;
+    height:0.54rem;
+}
+.main .goods-headerShow .Publicgoods h2,
+.main .goods-headerShow .Publicgoods h3,
+.main .goods-headerShow .Publicgoods p{
+    text-align:center;
+}
+.main .goods-headerShow .Publicgoods h2{
+    margin-bottom:0.13rem;
+    font-size:0.26rem;
+}
+.main .goods-headerShow .Publicgoods h3{
+    font-size:0.22rem;
+    color:#bbb;
+}
+.main .goods-headerShow .Publicgoods p{
+    color:#ca151e;
+    font-size:0.22rem;
+    font-family:"Microsoft YaHei";
+}
+.main .goods-headerShow .Publicgoods img{
+    margin:auto;
+}
+.main .goods-headerShow .Publicgoods img.hot{
+    position:absolute;
+    top:0;
+    left:0;
+    width:0.54rem !important;
+    height:0.54rem !important;
+    margin:0;
+}
+/****** worthSelect ******/
+.main .worthSelect{
+    margin:0.12rem 0;
+    border-top:0.01rem solid transparent;
+    background-color:#fff;
+}
+.main .worthSelect .title{
+    margin-top:0.16rem;
+    padding-left:0.32rem;
+    padding-bottom:0.13rem;
+    border-bottom:0.01rem solid #eaeaea;
+}
+.main .worthSelect .SelectSwiper{
+    height:3.44rem;
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .swiper-slide{
+    border-right:0.01rem solid #eaeaea;
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .swiper-slide img{
+    width:1.56rem;
+    height:1.58rem;
+    margin:0.2rem auto 0.28rem;
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .swiper-slide h3{
+    font-size:0.24rem;
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .swiper-slide p{
+    font-size:0.24rem;
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .swiper-slide p.cheap span{
+    color:#888;
+    font-family:"Microsoft YaHei";
+    font-size:0.20rem;
+    text-decoration:line-through;
+}
+    /* 商品公共样式（超值精选那块） */
+.main .worthSelect .SelectSwiper .swiper-wrapper .Publicgoods h2,
+.main .worthSelect .SelectSwiper .swiper-wrapper .Publicgoods h3,
+.main .worthSelect .SelectSwiper .swiper-wrapper .Publicgoods p{
+    text-align:center;
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .Publicgoods h2{
+    margin-bottom:0.13rem;
+    font-size:0.26rem;
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .Publicgoods h3{
+    font-size:0.22rem;
+    color:#bbb;
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .Publicgoods p{
+    color:#ca151e;
+    font-size:0.22rem;
+    font-family:"Microsoft YaHei";
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .Publicgoods img{
+    margin:auto;
+}
+.main .worthSelect .SelectSwiper .swiper-wrapper .Publicgoods img.hot{
+    position:absolute;
+    top:0;
+    left:0;
+    width:0.54rem !important;
+    height:0.54rem !important;
+}
+/****** Announcement ******/
+.main .announcement{
+    height:0.8rem;
+    margin-bottom:0.04rem;
+    background-color:#fff;
+}
+.main .announcement .container{
+    width:6.56rem;
+    margin:auto;
+}
+.main .announcement .container .icon-title{
+    float:left;
+    height:0.8rem;
+}
+.main .announcement .container .icon-title{
+    width:0.6rem;
+    margin-right:0.2rem;
+    background:url("../img/icon_notice.png") no-repeat center center/0.6rem 0.26rem;
+}
+.main .announcement .container .tipContainer{
+    position:relative;
+    width:4.52rem;
+    height:0.8rem;
+    overflow:hidden;
+}
+.main .announcement .container .tipContainer .tipwrap{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.main .announcement .container .tipContainer .tipwrap a{
+    display:block;
+    color:#000;
+    line-height:0.8rem;
+    font-size:0.22rem;
+}
+.main .announcement .container .more{
+    color:#888;
+    line-height:0.8rem;
+}
+/****** HUAWEI sect ******/
+.main .HUAWEI-sect-1{
+    margin-bottom:0.12rem;
+}
+.main .HUAWEI-sect-1 a{
+    float:left;
+    width:3.58rem;
+    height:1.02rem;
+    background-color:#fff;
+}
+.main .HUAWEI-sect-1 a.huawei{
+    margin-right:0.04rem;
+}
+.main .HUAWEI-sect-1 a img{
+    width:2.78rem;
+    height:0.52rem;
+    margin:0.24rem auto;
+}
+/****** Shop List ******/
+
+
+    /*** 公共样式 ***/
+.main .shopList{
+    background-color:#fff;
+}
+.main .shopList section{
+    border-top:0.01rem solid transparent;
+    border-bottom:0.13rem solid #eaeaea;
+}
+.main .shopList section>header{
+    width:6.56rem;
+    margin:0.24rem auto 0.22rem;
+}
+.main .shopList section>header h2{
+    float:left;
+    line-height:0.26rem;
+}
+.main .shopList section>header a{
+    float:right;
+    color:#888;
+    line-height:0.22rem;
+}
+.main .shopList section .list li{
+    position:relative;
+    float:left;
+    width:3.58rem;
+    height:3.5rem;
+}
+.main .shopList section .list li.marR{
+    margin-right:0.04rem;
+}
+.main .shopList section .list li a .phone{
+    width:100%;
+    height:2.20rem;
+}
+.main .shopList section .list li a .hot{
+    position:absolute;
+    top:0;
+    left:0;
+    width:0.54rem;
+    height:0.54rem;
+}
+.main .shopList section .list li a .content *{
+    text-align:center;
+    font-family:"Microsoft YaHei";
+}
+.main .shopList section .list li a .content h2{
+    margin-top:0.15rem;
+}
+.main .shopList section .list li a .content h3{
+    color:#bbb;
+    font-family:"宋体";
+}
+.main .shopList section .list li a .content p{
+    color:#ca151e;
+}
+
+    /** 公用Swiper **/
+.main .shopList section .publicSwiper{
+    border-top:0.01rem solid #eaeaea;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods{
+    height:3.43rem;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods h2,
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods h3,
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods p{
+    text-align:center;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods h2{
+    margin-bottom:0.13rem;
+    font-size:0.26rem;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods h3{
+    font-size:0.22rem;
+    color:#bbb;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods p{
+    color:#ca151e;
+    font-size:0.22rem;
+    font-family:"Microsoft YaHei";
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods img{
+    margin:auto;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods img.hot{
+    position:absolute;
+    top:0;
+    left:0;
+    width:0.54rem !important;
+    height:0.54rem !important;
+    margin:0;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods{
+    border-right:0.01rem solid #eaeaea;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods img{
+    width:1.56rem;
+    height:1.58rem;
+    margin:0.2rem auto 0.24rem;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods h3{
+    font-size:0.24rem;
+    width:2.20rem;
+    margin:auto;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods p{
+    font-size:0.24rem;
+}
+.main .shopList section .publicSwiper .swiper-wrapper .Publicgoods p.cheap span{
+    color:#888;
+    font-family:"Microsoft YaHei";
+    font-size:0.20rem;
+    text-decoration:line-through;
+}
+    /* 特殊样式 */
+.main .shopList .sec-3 .list li a .content h2,
+.main .shopList .sec-6 .list li a .content h2{
+    font-family:"宋体";
+}
+.main .shopList .sec-3 .publicSwiper .swiper-wrapper .Publicgoods .big,
+.main .shopList .sec-6 .publicSwiper .swiper-wrapper .Publicgoods .big{
+    line-height:0.26rem;
+    margin-bottom:0;
+}
+.main .shopList .sec-7 .publicSwiper .swiper-wrapper .Publicgoods h2{
+    width:2rem;
+    margin:auto;
+    line-height:0.26rem;
+}
+/****** Main footer ******/
+.main .MainFoot-wrap{
+    background-color:#fff;
+}
+    /** footTop **/
+.main .MainFoot-wrap .MainFoot-content .footerTop{
+    width:6.32rem;
+    margin:0 auto 0.33rem;
+    border-bottom:0.01rem solid #eaeaea;
+}
+.main .MainFoot-wrap .MainFoot-content .footerTop a{
+    position:relative;
+    float:left;
+    width:1.44rem;
+    height:0.6rem;
+    margin:0.30rem 0 0.01rem;
+    color:#000;
+    font-size:0.22rem;
+    text-align:center;
+}
+.main .MainFoot-wrap .MainFoot-content .footerTop a.login{
+    margin-left:1.71rem;
+}
+.main .MainFoot-wrap .MainFoot-content .footerTop a.login:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:0.01rem;
+    height:0.36rem;
+    background-color:#eaeaea;
+}
+    /** footTop **/
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap{
+    width:6.32rem;
+    margin:0 auto 0.25rem;
+    border-bottom:0.01rem solid #eaeaea;
+}
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap .footerClient-Content{
+    width:4.72rem;
+    margin:auto;
+}
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap .footerClient-Content div{
+    float:left;
+    margin-bottom:0.15rem;
+}
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap .footerClient-Content div.Client-pcPage{
+    float:right;
+}
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap .footerClient-Content div.Client-mobilePage{
+    margin-left:1.3rem;
+}
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap .footerClient-Content div a i{
+    display:block;
+    width:0.70rem;
+    height:0.70rem;
+    background-image:url("../img/bg-bottom.png");
+    background-size:2.15rem 0.7rem;
+}
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap .footerClient-Content .Client-mobilePage a i{
+    background-position:-0.73rem 0;
+}
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap .footerClient-Content .Client-pcPage a i{
+    background-position:-1.45rem 0;
+}
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap .footerClient-Content div a p{
+    margin-top:0.08rem;
+    color:#888;
+    font-size:0.22rem;
+    text-align:center;
+}
+.main .MainFoot-wrap .MainFoot-content .footerClient-Wrap .footerClient-Content .Client-mobilePage a p{
+    color:#333;
+}
+/** Page info **/
+.main .MainFoot-wrap .MainFoot-content .PageInfo-Wrap{
+    margin-bottom:1rem;
+    padding-bottom:0.2rem;
+}
+.main .MainFoot-wrap .MainFoot-content .PageInfo-Wrap .PageInfo-list{
+    width:6.32rem;
+    margin:auto;
+}
+.main .MainFoot-wrap .MainFoot-content .PageInfo-Wrap .PageInfo-list a.bor{
+    border-right:0.01rem solid #eaeaea;
+}
+.main .MainFoot-wrap .MainFoot-content .PageInfo-Wrap .PageInfo-list a,.main .MainFoot-wrap .MainFoot-content .PageInfo-Wrap .PageInfo-list p{
+    float:left;
+    padding:0 0.15rem;
+    color:#000;
+    font-size:0.20rem;
+    line-height:1;
+}
+.main .MainFoot-wrap .MainFoot-content .PageInfo-Wrap .PageInfo-list p{
+    margin:0.08rem 0;
+}
+/****** Foot ******/
+.actionBar{
+    position:fixed;
+    bottom:0;
+    z-index:1;
+    height:0.96rem;
+    width:7.2rem;
+    border-top:0.01rem solid #eee;
+    background-color:#fff;
+}
+.actionBar .actionBarList li{
+    float:left;
+    width:1.8rem;
+    height:0.96rem;
+}
+.actionBar .actionBarList li a{
+    display:block;
+    width:100%;
+    height:100%;
+    background:url("../picture/icon55.png") no-repeat 0 0/8rem;
+}
+.actionBar .actionBarList li.index a{
+    background-position:-0.1rem -1.06rem;
+}
+.actionBar .actionBarList li.classification a{
+    background-position:-2.1rem 0;
+}
+.actionBar .actionBarList li.shop a{
+    background-position:-4.1rem 0;
+}
+.actionBar .actionBarList li.my a{
+    background-position:-6.1rem 0;
+}
+    /*****************
+      *   By Print    *
+       *   END         *
+        *****************/

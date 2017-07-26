@@ -166,6 +166,7 @@ html{background-color:#eaeaea;}
     margin-top:0.16rem;
     padding-left:0.32rem;
     padding-bottom:0.13rem;
+    border-top:0.01rem solid transparent;   /* 防止外边距合并 */
     border-bottom:0.01rem solid #eaeaea;
 }
 .main .worthSelect .SelectSwiper{
@@ -283,6 +284,7 @@ html{background-color:#eaeaea;}
 
     /*** 公共样式 ***/
 .main .shopList{
+    border-top:0.01rem solid transparent;   /* 防止外边距合并 */
     background-color:#fff;
 }
 .main .shopList section{
